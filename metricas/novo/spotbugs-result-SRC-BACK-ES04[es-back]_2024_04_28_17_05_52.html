@@ -1,0 +1,1732 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.7.3.</p>
+      <p>Project: 
+			SRC-BACK-ES04[es-back]</p>
+      <h2>Metrics</h2>
+      <p>1584 lines of code analyzed,
+	in 91 classes, 
+	in 34 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right"/>
+            <td align="right">NaN</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">96</td>
+            <td align="right">60.61</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>96</b>
+            </td>
+            <td align="right">
+               <b>60.61</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </td>
+            <td align="right">3</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">18</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">57</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+            </td>
+            <td align="right">12</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </td>
+            <td align="right">6</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>96</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The method name com.esback.controller.calendario.CalendarioController.ListarEventos(OAuth2AuthenticationToken) doesn't start with a lower case letter<br/>
+                  <br/>
+                  <br/>In file CalendarioController.java,
+					
+						line 45<br/>In class com.esback.controller.calendario.CalendarioController<br/>In method com.esback.controller.calendario.CalendarioController.ListarEventos(OAuth2AuthenticationToken)<br/>At CalendarioController.java:[line 45]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NM_CLASS_NAMING_CONVENTION">Class names should start with an upper case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The class name com.esback.enumeration.frequenciaEnum doesn't start with an upper case letter<br/>
+                  <br/>
+                  <br/>In file frequenciaEnum.java,
+					
+						lines 3
+						    to 7<br/>In class com.esback.enumeration.frequenciaEnum<br/>At frequenciaEnum.java:[lines 3-7]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The method name com.esback.exception.GlobalExceptionHandler.GeneralSecurityException(IOException) doesn't start with a lower case letter<br/>
+                  <br/>
+                  <br/>In file GlobalExceptionHandler.java,
+					
+						line 24<br/>In class com.esback.exception.GlobalExceptionHandler<br/>In method com.esback.exception.GlobalExceptionHandler.GeneralSecurityException(IOException)<br/>At GlobalExceptionHandler.java:[line 24]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field validaPreRequisito in com.esback.service.disciplina.CadastrarDisciplinasCursandoService.cadastrarDisciplinasCursando(DisciplinaDTO)<br/>
+                  <br/>
+                  <br/>In file CadastrarDisciplinasCursandoService.java CadastrarDisciplinasCursandoService.java,
+					
+						line 44 44<br/>In class com.esback.service.disciplina.CadastrarDisciplinasCursandoService<br/>In method com.esback.service.disciplina.CadastrarDisciplinasCursandoService.cadastrarDisciplinasCursando(DisciplinaDTO)<br/>Field com.esback.service.disciplina.CadastrarDisciplinasCursandoService.validaPreRequisito<br/>At CadastrarDisciplinasCursandoService.java:[line 44]<br/>At CadastrarDisciplinasCursandoService.java:[line 44]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field calculadora in com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService.getMediaDisciplinaCursando(Long)<br/>
+                  <br/>
+                  <br/>In file DisciplinaGetMediaDisciplinaCursandoService.java DisciplinaGetMediaDisciplinaCursandoService.java,
+					
+						line 24 24<br/>In class com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService<br/>In method com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService.getMediaDisciplinaCursando(Long)<br/>Field com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService.calculadora<br/>At DisciplinaGetMediaDisciplinaCursandoService.java:[line 24]<br/>At DisciplinaGetMediaDisciplinaCursandoService.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field calculadora in com.esback.service.historico.GetCreditosFaltantesService.getCreditosFaltantes()<br/>
+                  <br/>
+                  <br/>In file GetCreditosFaltantesService.java GetCreditosFaltantesService.java,
+					
+						line 30 30<br/>In class com.esback.service.historico.GetCreditosFaltantesService<br/>In method com.esback.service.historico.GetCreditosFaltantesService.getCreditosFaltantes()<br/>Field com.esback.service.historico.GetCreditosFaltantesService.calculadora<br/>At GetCreditosFaltantesService.java:[line 30]<br/>At GetCreditosFaltantesService.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field calculadora in com.esback.service.historico.GetProgressoHorasObrigatoriasService.getProgressoHorasObrigatorias()<br/>
+                  <br/>
+                  <br/>In file GetProgressoHorasObrigatoriasService.java GetProgressoHorasObrigatoriasService.java,
+					
+						line 28 28<br/>In class com.esback.service.historico.GetProgressoHorasObrigatoriasService<br/>In method com.esback.service.historico.GetProgressoHorasObrigatoriasService.getProgressoHorasObrigatorias()<br/>Field com.esback.service.historico.GetProgressoHorasObrigatoriasService.calculadora<br/>At GetProgressoHorasObrigatoriasService.java:[line 28]<br/>At GetProgressoHorasObrigatoriasService.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field calculadora in com.esback.service.historico.GetProgressoTotalCursoService.getProgressoTotalCurso()<br/>
+                  <br/>
+                  <br/>In file GetProgressoTotalCursoService.java GetProgressoTotalCursoService.java,
+					
+						line 29 29<br/>In class com.esback.service.historico.GetProgressoTotalCursoService<br/>In method com.esback.service.historico.GetProgressoTotalCursoService.getProgressoTotalCurso()<br/>Field com.esback.service.historico.GetProgressoTotalCursoService.calculadora<br/>At GetProgressoTotalCursoService.java:[line 29]<br/>At GetProgressoTotalCursoService.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Read of unwritten field validaPreRequisito in com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService.cadastrarDisciplinasCursadas(DisciplinaDTO)<br/>
+                  <br/>
+                  <br/>In file HistoricoCadastrarDisciplinasCursadasService.java HistoricoCadastrarDisciplinasCursadasService.java,
+					
+						line 50 50<br/>In class com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService<br/>In method com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService.cadastrarDisciplinasCursadas(DisciplinaDTO)<br/>Field com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService.validaPreRequisito<br/>At HistoricoCadastrarDisciplinasCursadasService.java:[line 50]<br/>At HistoricoCadastrarDisciplinasCursadasService.java:[line 50]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SA_FIELD_SELF_ASSIGNMENT">Self assignment of field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Self assignment of field Disciplina.preRequisitos in new com.esback.model.curso.Disciplina(Integer, String, Integer, Integer, String, List)<br/>
+                  <br/>
+                  <br/>In file Disciplina.java,
+					
+						line 93<br/>In class com.esback.model.curso.Disciplina<br/>In method new com.esback.model.curso.Disciplina(Integer, String, Integer, Integer, String, List)<br/>Field com.esback.model.curso.Disciplina.preRequisitos<br/>At Disciplina.java:[line 93]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UR_UNINIT_READ">Uninitialized read of field in constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Uninitialized read of preRequisitos in new com.esback.model.curso.Disciplina(Integer, String, Integer, Integer, String, List)<br/>
+                  <br/>
+                  <br/>In file Disciplina.java,
+					
+						line 93<br/>In class com.esback.model.curso.Disciplina<br/>In method new com.esback.model.curso.Disciplina(Integer, String, Integer, Integer, String, List)<br/>Field com.esback.model.curso.Disciplina.preRequisitos<br/>At Disciplina.java:[line 93]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.dto.sala.SalaVirtualDTO.descricao<br/>
+                  <br/>
+                  <br/>In file SalaVirtualDTO.java,
+					
+						line 14<br/>In class com.esback.dto.sala.SalaVirtualDTO<br/>Field com.esback.dto.sala.SalaVirtualDTO.descricao<br/>At SalaVirtualDTO.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.dto.sala.SalaVirtualDTO.disciplina<br/>
+                  <br/>
+                  <br/>In file SalaVirtualDTO.java,
+					
+						line 18<br/>In class com.esback.dto.sala.SalaVirtualDTO<br/>Field com.esback.dto.sala.SalaVirtualDTO.disciplina<br/>At SalaVirtualDTO.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.dto.sala.SalaVirtualDTO.endereco<br/>
+                  <br/>
+                  <br/>In file SalaVirtualDTO.java,
+					
+						line 22<br/>In class com.esback.dto.sala.SalaVirtualDTO<br/>Field com.esback.dto.sala.SalaVirtualDTO.endereco<br/>At SalaVirtualDTO.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.dto.sala.SalaVirtualDTO.nome<br/>
+                  <br/>
+                  <br/>In file SalaVirtualDTO.java,
+					
+						line 10<br/>In class com.esback.dto.sala.SalaVirtualDTO<br/>Field com.esback.dto.sala.SalaVirtualDTO.nome<br/>At SalaVirtualDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.service.disciplina.CadastrarDisciplinasCursandoService.validaPreRequisito<br/>
+                  <br/>
+                  <br/>In file CadastrarDisciplinasCursandoService.java,
+					
+						line 44<br/>In class com.esback.service.disciplina.CadastrarDisciplinasCursandoService<br/>Field com.esback.service.disciplina.CadastrarDisciplinasCursandoService.validaPreRequisito<br/>At CadastrarDisciplinasCursandoService.java:[line 44]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService.calculadora<br/>
+                  <br/>
+                  <br/>In file DisciplinaGetMediaDisciplinaCursandoService.java,
+					
+						line 24<br/>In class com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService<br/>Field com.esback.service.disciplina.DisciplinaGetMediaDisciplinaCursandoService.calculadora<br/>At DisciplinaGetMediaDisciplinaCursandoService.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.service.historico.GetCreditosFaltantesService.calculadora<br/>
+                  <br/>
+                  <br/>In file GetCreditosFaltantesService.java,
+					
+						line 30<br/>In class com.esback.service.historico.GetCreditosFaltantesService<br/>Field com.esback.service.historico.GetCreditosFaltantesService.calculadora<br/>At GetCreditosFaltantesService.java:[line 30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.service.historico.GetProgressoHorasObrigatoriasService.calculadora<br/>
+                  <br/>
+                  <br/>In file GetProgressoHorasObrigatoriasService.java,
+					
+						line 28<br/>In class com.esback.service.historico.GetProgressoHorasObrigatoriasService<br/>Field com.esback.service.historico.GetProgressoHorasObrigatoriasService.calculadora<br/>At GetProgressoHorasObrigatoriasService.java:[line 28]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.service.historico.GetProgressoTotalCursoService.calculadora<br/>
+                  <br/>
+                  <br/>In file GetProgressoTotalCursoService.java,
+					
+						line 29<br/>In class com.esback.service.historico.GetProgressoTotalCursoService<br/>Field com.esback.service.historico.GetProgressoTotalCursoService.calculadora<br/>At GetProgressoTotalCursoService.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unwritten field: com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService.validaPreRequisito<br/>
+                  <br/>
+                  <br/>In file HistoricoCadastrarDisciplinasCursadasService.java,
+					
+						line 50<br/>In class com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService<br/>Field com.esback.service.historico.HistoricoCadastrarDisciplinasCursadasService.validaPreRequisito<br/>At HistoricoCadastrarDisciplinasCursadasService.java:[line 50]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.AcessarEventoDTO.getDataFim() may expose internal representation by returning AcessarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 26 26<br/>In class com.esback.dto.Evento.AcessarEventoDTO<br/>In method com.esback.dto.Evento.AcessarEventoDTO.getDataFim()<br/>Field com.esback.dto.Evento.AcessarEventoDTO.dataFim<br/>At AcessarEventoDTO.java:[line 26]<br/>At AcessarEventoDTO.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.AcessarEventoDTO.getDataInicio() may expose internal representation by returning AcessarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 24 24<br/>In class com.esback.dto.Evento.AcessarEventoDTO<br/>In method com.esback.dto.Evento.AcessarEventoDTO.getDataInicio()<br/>Field com.esback.dto.Evento.AcessarEventoDTO.dataInicio<br/>At AcessarEventoDTO.java:[line 24]<br/>At AcessarEventoDTO.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.CriarEventoDTO.getDataFim() may expose internal representation by returning CriarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 21 21<br/>In class com.esback.dto.Evento.CriarEventoDTO<br/>In method com.esback.dto.Evento.CriarEventoDTO.getDataFim()<br/>Field com.esback.dto.Evento.CriarEventoDTO.dataFim<br/>At CriarEventoDTO.java:[line 21]<br/>At CriarEventoDTO.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.CriarEventoDTO.getDataInicio() may expose internal representation by returning CriarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 19 19<br/>In class com.esback.dto.Evento.CriarEventoDTO<br/>In method com.esback.dto.Evento.CriarEventoDTO.getDataInicio()<br/>Field com.esback.dto.Evento.CriarEventoDTO.dataInicio<br/>At CriarEventoDTO.java:[line 19]<br/>At CriarEventoDTO.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.EditarEventoDTO.getDataFim() may expose internal representation by returning EditarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 27 27<br/>In class com.esback.dto.Evento.EditarEventoDTO<br/>In method com.esback.dto.Evento.EditarEventoDTO.getDataFim()<br/>Field com.esback.dto.Evento.EditarEventoDTO.dataFim<br/>At EditarEventoDTO.java:[line 27]<br/>At EditarEventoDTO.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.EditarEventoDTO.getDataInicio() may expose internal representation by returning EditarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 25 25<br/>In class com.esback.dto.Evento.EditarEventoDTO<br/>In method com.esback.dto.Evento.EditarEventoDTO.getDataInicio()<br/>Field com.esback.dto.Evento.EditarEventoDTO.dataInicio<br/>At EditarEventoDTO.java:[line 25]<br/>At EditarEventoDTO.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO.getDiasDaSemana() may expose internal representation by returning RecorrenciaDTO.diasDaSemana<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 26 26<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method com.esback.dto.Evento.RecorrenciaDTO.getDiasDaSemana()<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDaSemana<br/>At RecorrenciaDTO.java:[line 26]<br/>At RecorrenciaDTO.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO.getDiasDaSemanaOrdenal() may expose internal representation by returning RecorrenciaDTO.diasDaSemanaOrdenal<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 37 37<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method com.esback.dto.Evento.RecorrenciaDTO.getDiasDaSemanaOrdenal()<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDaSemanaOrdenal<br/>At RecorrenciaDTO.java:[line 37]<br/>At RecorrenciaDTO.java:[line 37]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO.getDiasDoMes() may expose internal representation by returning RecorrenciaDTO.diasDoMes<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 42 42<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method com.esback.dto.Evento.RecorrenciaDTO.getDiasDoMes()<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDoMes<br/>At RecorrenciaDTO.java:[line 42]<br/>At RecorrenciaDTO.java:[line 42]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.disciplina.DisciplinaDTO.getPreRequisitos() may expose internal representation by returning DisciplinaDTO.preRequisitos<br/>
+                  <br/>
+                  <br/>In file DisciplinaDTO.java DisciplinaDTO.java,
+					
+						line 51 51<br/>In class com.esback.dto.disciplina.DisciplinaDTO<br/>In method com.esback.dto.disciplina.DisciplinaDTO.getPreRequisitos()<br/>Field com.esback.dto.disciplina.DisciplinaDTO.preRequisitos<br/>At DisciplinaDTO.java:[line 51]<br/>At DisciplinaDTO.java:[line 51]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.disciplina.DisciplinaNotasDTO.getNotas() may expose internal representation by returning DisciplinaNotasDTO.notas<br/>
+                  <br/>
+                  <br/>In file DisciplinaNotasDTO.java DisciplinaNotasDTO.java,
+					
+						line 63 63<br/>In class com.esback.dto.disciplina.DisciplinaNotasDTO<br/>In method com.esback.dto.disciplina.DisciplinaNotasDTO.getNotas()<br/>Field com.esback.dto.disciplina.DisciplinaNotasDTO.notas<br/>At DisciplinaNotasDTO.java:[line 63]<br/>At DisciplinaNotasDTO.java:[line 63]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.disciplina.DisciplinaNotasDTO.getPreRequisitos() may expose internal representation by returning DisciplinaNotasDTO.preRequisitos<br/>
+                  <br/>
+                  <br/>In file DisciplinaNotasDTO.java DisciplinaNotasDTO.java,
+					
+						line 55 55<br/>In class com.esback.dto.disciplina.DisciplinaNotasDTO<br/>In method com.esback.dto.disciplina.DisciplinaNotasDTO.getPreRequisitos()<br/>Field com.esback.dto.disciplina.DisciplinaNotasDTO.preRequisitos<br/>At DisciplinaNotasDTO.java:[line 55]<br/>At DisciplinaNotasDTO.java:[line 55]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.nota.NotaDTO.getNotas() may expose internal representation by returning NotaDTO.notas<br/>
+                  <br/>
+                  <br/>In file NotaDTO.java NotaDTO.java,
+					
+						line 20 20<br/>In class com.esback.dto.nota.NotaDTO<br/>In method com.esback.dto.nota.NotaDTO.getNotas()<br/>Field com.esback.dto.nota.NotaDTO.notas<br/>At NotaDTO.java:[line 20]<br/>At NotaDTO.java:[line 20]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Curso.getDisciplinasList() may expose internal representation by returning Curso.disciplinasList<br/>
+                  <br/>
+                  <br/>In file Curso.java Curso.java,
+					
+						line 21 21<br/>In class com.esback.model.curso.Curso<br/>In method com.esback.model.curso.Curso.getDisciplinasList()<br/>Field com.esback.model.curso.Curso.disciplinasList<br/>At Curso.java:[line 21]<br/>At Curso.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Disciplina.getNotas() may expose internal representation by returning Disciplina.notas<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 134 134<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.getNotas()<br/>Field com.esback.model.curso.Disciplina.notas<br/>At Disciplina.java:[line 134]<br/>At Disciplina.java:[line 134]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Disciplina.getPesos() may expose internal representation by returning Disciplina.pesos<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 142 142<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.getPesos()<br/>Field com.esback.model.curso.Disciplina.pesos<br/>At Disciplina.java:[line 142]<br/>At Disciplina.java:[line 142]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Disciplina.getPreRequisitos() may expose internal representation by returning Disciplina.preRequisitos<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 174 174<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.getPreRequisitos()<br/>Field com.esback.model.curso.Disciplina.preRequisitos<br/>At Disciplina.java:[line 174]<br/>At Disciplina.java:[line 174]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Historico.getCadeiras() may expose internal representation by returning Historico.cadeiras<br/>
+                  <br/>
+                  <br/>In file Historico.java Historico.java,
+					
+						line 47 47<br/>In class com.esback.model.curso.Historico<br/>In method com.esback.model.curso.Historico.getCadeiras()<br/>Field com.esback.model.curso.Historico.cadeiras<br/>At Historico.java:[line 47]<br/>At Historico.java:[line 47]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Nota.getNotas() may expose internal representation by returning Nota.notas<br/>
+                  <br/>
+                  <br/>In file Nota.java Nota.java,
+					
+						line 34 34<br/>In class com.esback.model.curso.Nota<br/>In method com.esback.model.curso.Nota.getNotas()<br/>Field com.esback.model.curso.Nota.notas<br/>At Nota.java:[line 34]<br/>At Nota.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.AcessarEventoDTO(String, String, String, Date, Date) may expose internal representation by storing an externally mutable object into AcessarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.AcessarEventoDTO<br/>In method new com.esback.dto.Evento.AcessarEventoDTO(String, String, String, Date, Date)<br/>Field com.esback.dto.Evento.AcessarEventoDTO.dataFim<br/>Local variable named dataFim<br/>At AcessarEventoDTO.java:[line 10]<br/>At AcessarEventoDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.AcessarEventoDTO(String, String, String, Date, Date) may expose internal representation by storing an externally mutable object into AcessarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.AcessarEventoDTO<br/>In method new com.esback.dto.Evento.AcessarEventoDTO(String, String, String, Date, Date)<br/>Field com.esback.dto.Evento.AcessarEventoDTO.dataInicio<br/>Local variable named dataInicio<br/>At AcessarEventoDTO.java:[line 10]<br/>At AcessarEventoDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.AcessarEventoDTO.setDataFim(Date) may expose internal representation by storing an externally mutable object into AcessarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 8 8<br/>In class com.esback.dto.Evento.AcessarEventoDTO<br/>In method com.esback.dto.Evento.AcessarEventoDTO.setDataFim(Date)<br/>Field com.esback.dto.Evento.AcessarEventoDTO.dataFim<br/>Local variable named dataFim<br/>At AcessarEventoDTO.java:[line 8]<br/>At AcessarEventoDTO.java:[line 8]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.AcessarEventoDTO.setDataInicio(Date) may expose internal representation by storing an externally mutable object into AcessarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 8 8<br/>In class com.esback.dto.Evento.AcessarEventoDTO<br/>In method com.esback.dto.Evento.AcessarEventoDTO.setDataInicio(Date)<br/>Field com.esback.dto.Evento.AcessarEventoDTO.dataInicio<br/>Local variable named dataInicio<br/>At AcessarEventoDTO.java:[line 8]<br/>At AcessarEventoDTO.java:[line 8]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder.dataFim(Date) may expose internal representation by storing an externally mutable object into AcessarEventoDTO$AcessarEventoDTOBuilder.dataFim<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 9 9<br/>In class com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder<br/>In method com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder.dataFim(Date)<br/>Field com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder.dataFim<br/>Local variable named dataFim<br/>At AcessarEventoDTO.java:[line 9]<br/>At AcessarEventoDTO.java:[line 9]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder.dataInicio(Date) may expose internal representation by storing an externally mutable object into AcessarEventoDTO$AcessarEventoDTOBuilder.dataInicio<br/>
+                  <br/>
+                  <br/>In file AcessarEventoDTO.java AcessarEventoDTO.java,
+					
+						line 9 9<br/>In class com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder<br/>In method com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder.dataInicio(Date)<br/>Field com.esback.dto.Evento.AcessarEventoDTO$AcessarEventoDTOBuilder.dataInicio<br/>Local variable named dataInicio<br/>At AcessarEventoDTO.java:[line 9]<br/>At AcessarEventoDTO.java:[line 9]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.CriarEventoDTO(String, String, Date, Date) may expose internal representation by storing an externally mutable object into CriarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.CriarEventoDTO<br/>In method new com.esback.dto.Evento.CriarEventoDTO(String, String, Date, Date)<br/>Field com.esback.dto.Evento.CriarEventoDTO.dataFim<br/>Local variable named dataFim<br/>At CriarEventoDTO.java:[line 10]<br/>At CriarEventoDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.CriarEventoDTO(String, String, Date, Date) may expose internal representation by storing an externally mutable object into CriarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.CriarEventoDTO<br/>In method new com.esback.dto.Evento.CriarEventoDTO(String, String, Date, Date)<br/>Field com.esback.dto.Evento.CriarEventoDTO.dataInicio<br/>Local variable named dataInicio<br/>At CriarEventoDTO.java:[line 10]<br/>At CriarEventoDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.CriarEventoDTO.setDataFim(Date) may expose internal representation by storing an externally mutable object into CriarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 8 8<br/>In class com.esback.dto.Evento.CriarEventoDTO<br/>In method com.esback.dto.Evento.CriarEventoDTO.setDataFim(Date)<br/>Field com.esback.dto.Evento.CriarEventoDTO.dataFim<br/>Local variable named dataFim<br/>At CriarEventoDTO.java:[line 8]<br/>At CriarEventoDTO.java:[line 8]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.CriarEventoDTO.setDataInicio(Date) may expose internal representation by storing an externally mutable object into CriarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 8 8<br/>In class com.esback.dto.Evento.CriarEventoDTO<br/>In method com.esback.dto.Evento.CriarEventoDTO.setDataInicio(Date)<br/>Field com.esback.dto.Evento.CriarEventoDTO.dataInicio<br/>Local variable named dataInicio<br/>At CriarEventoDTO.java:[line 8]<br/>At CriarEventoDTO.java:[line 8]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder.dataFim(Date) may expose internal representation by storing an externally mutable object into CriarEventoDTO$CriarEventoDTOBuilder.dataFim<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 9 9<br/>In class com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder<br/>In method com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder.dataFim(Date)<br/>Field com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder.dataFim<br/>Local variable named dataFim<br/>At CriarEventoDTO.java:[line 9]<br/>At CriarEventoDTO.java:[line 9]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder.dataInicio(Date) may expose internal representation by storing an externally mutable object into CriarEventoDTO$CriarEventoDTOBuilder.dataInicio<br/>
+                  <br/>
+                  <br/>In file CriarEventoDTO.java CriarEventoDTO.java,
+					
+						line 9 9<br/>In class com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder<br/>In method com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder.dataInicio(Date)<br/>Field com.esback.dto.Evento.CriarEventoDTO$CriarEventoDTOBuilder.dataInicio<br/>Local variable named dataInicio<br/>At CriarEventoDTO.java:[line 9]<br/>At CriarEventoDTO.java:[line 9]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.EditarEventoDTO(String, String, String, Date, Date) may expose internal representation by storing an externally mutable object into EditarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 14 14<br/>In class com.esback.dto.Evento.EditarEventoDTO<br/>In method new com.esback.dto.Evento.EditarEventoDTO(String, String, String, Date, Date)<br/>Field com.esback.dto.Evento.EditarEventoDTO.dataFim<br/>Local variable named dataFim<br/>At EditarEventoDTO.java:[line 14]<br/>At EditarEventoDTO.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.EditarEventoDTO(String, String, String, Date, Date) may expose internal representation by storing an externally mutable object into EditarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 14 14<br/>In class com.esback.dto.Evento.EditarEventoDTO<br/>In method new com.esback.dto.Evento.EditarEventoDTO(String, String, String, Date, Date)<br/>Field com.esback.dto.Evento.EditarEventoDTO.dataInicio<br/>Local variable named dataInicio<br/>At EditarEventoDTO.java:[line 14]<br/>At EditarEventoDTO.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.EditarEventoDTO.setDataFim(Date) may expose internal representation by storing an externally mutable object into EditarEventoDTO.dataFim<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 12 12<br/>In class com.esback.dto.Evento.EditarEventoDTO<br/>In method com.esback.dto.Evento.EditarEventoDTO.setDataFim(Date)<br/>Field com.esback.dto.Evento.EditarEventoDTO.dataFim<br/>Local variable named dataFim<br/>At EditarEventoDTO.java:[line 12]<br/>At EditarEventoDTO.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.EditarEventoDTO.setDataInicio(Date) may expose internal representation by storing an externally mutable object into EditarEventoDTO.dataInicio<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 12 12<br/>In class com.esback.dto.Evento.EditarEventoDTO<br/>In method com.esback.dto.Evento.EditarEventoDTO.setDataInicio(Date)<br/>Field com.esback.dto.Evento.EditarEventoDTO.dataInicio<br/>Local variable named dataInicio<br/>At EditarEventoDTO.java:[line 12]<br/>At EditarEventoDTO.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder.dataFim(Date) may expose internal representation by storing an externally mutable object into EditarEventoDTO$EditarEventoDTOBuilder.dataFim<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 13 13<br/>In class com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder<br/>In method com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder.dataFim(Date)<br/>Field com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder.dataFim<br/>Local variable named dataFim<br/>At EditarEventoDTO.java:[line 13]<br/>At EditarEventoDTO.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder.dataInicio(Date) may expose internal representation by storing an externally mutable object into EditarEventoDTO$EditarEventoDTOBuilder.dataInicio<br/>
+                  <br/>
+                  <br/>In file EditarEventoDTO.java EditarEventoDTO.java,
+					
+						line 13 13<br/>In class com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder<br/>In method com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder.dataInicio(Date)<br/>Field com.esback.dto.Evento.EditarEventoDTO$EditarEventoDTOBuilder.dataInicio<br/>Local variable named dataInicio<br/>At EditarEventoDTO.java:[line 13]<br/>At EditarEventoDTO.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.RecorrenciaDTO(frequenciaEnum, int, int, HashSet, boolean, ArrayList, HashSet, int) may expose internal representation by storing an externally mutable object into RecorrenciaDTO.diasDaSemana<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 12 12<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method new com.esback.dto.Evento.RecorrenciaDTO(frequenciaEnum, int, int, HashSet, boolean, ArrayList, HashSet, int)<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDaSemana<br/>Local variable named diasDaSemana<br/>At RecorrenciaDTO.java:[line 12]<br/>At RecorrenciaDTO.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.RecorrenciaDTO(frequenciaEnum, int, int, HashSet, boolean, ArrayList, HashSet, int) may expose internal representation by storing an externally mutable object into RecorrenciaDTO.diasDaSemanaOrdenal<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 12 12<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method new com.esback.dto.Evento.RecorrenciaDTO(frequenciaEnum, int, int, HashSet, boolean, ArrayList, HashSet, int)<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDaSemanaOrdenal<br/>Local variable named diasDaSemanaOrdenal<br/>At RecorrenciaDTO.java:[line 12]<br/>At RecorrenciaDTO.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.dto.Evento.RecorrenciaDTO(frequenciaEnum, int, int, HashSet, boolean, ArrayList, HashSet, int) may expose internal representation by storing an externally mutable object into RecorrenciaDTO.diasDoMes<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 12 12<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method new com.esback.dto.Evento.RecorrenciaDTO(frequenciaEnum, int, int, HashSet, boolean, ArrayList, HashSet, int)<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDoMes<br/>Local variable named diasDoMes<br/>At RecorrenciaDTO.java:[line 12]<br/>At RecorrenciaDTO.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO.setDiasDaSemana(HashSet) may expose internal representation by storing an externally mutable object into RecorrenciaDTO.diasDaSemana<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method com.esback.dto.Evento.RecorrenciaDTO.setDiasDaSemana(HashSet)<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDaSemana<br/>Local variable named diasDaSemana<br/>At RecorrenciaDTO.java:[line 10]<br/>At RecorrenciaDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO.setDiasDaSemanaOrdenal(ArrayList) may expose internal representation by storing an externally mutable object into RecorrenciaDTO.diasDaSemanaOrdenal<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method com.esback.dto.Evento.RecorrenciaDTO.setDiasDaSemanaOrdenal(ArrayList)<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDaSemanaOrdenal<br/>Local variable named diasDaSemanaOrdenal<br/>At RecorrenciaDTO.java:[line 10]<br/>At RecorrenciaDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO.setDiasDoMes(HashSet) may expose internal representation by storing an externally mutable object into RecorrenciaDTO.diasDoMes<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 10 10<br/>In class com.esback.dto.Evento.RecorrenciaDTO<br/>In method com.esback.dto.Evento.RecorrenciaDTO.setDiasDoMes(HashSet)<br/>Field com.esback.dto.Evento.RecorrenciaDTO.diasDoMes<br/>Local variable named diasDoMes<br/>At RecorrenciaDTO.java:[line 10]<br/>At RecorrenciaDTO.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemana(HashSet) may expose internal representation by storing an externally mutable object into RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemana$value<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 11 11<br/>In class com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder<br/>In method com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemana(HashSet)<br/>Field com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemana$value<br/>Local variable named diasDaSemana<br/>At RecorrenciaDTO.java:[line 11]<br/>At RecorrenciaDTO.java:[line 11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemanaOrdenal(ArrayList) may expose internal representation by storing an externally mutable object into RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemanaOrdenal$value<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 11 11<br/>In class com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder<br/>In method com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemanaOrdenal(ArrayList)<br/>Field com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDaSemanaOrdenal$value<br/>Local variable named diasDaSemanaOrdenal<br/>At RecorrenciaDTO.java:[line 11]<br/>At RecorrenciaDTO.java:[line 11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDoMes(HashSet) may expose internal representation by storing an externally mutable object into RecorrenciaDTO$RecorrenciaDTOBuilder.diasDoMes<br/>
+                  <br/>
+                  <br/>In file RecorrenciaDTO.java RecorrenciaDTO.java,
+					
+						line 11 11<br/>In class com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder<br/>In method com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDoMes(HashSet)<br/>Field com.esback.dto.Evento.RecorrenciaDTO$RecorrenciaDTOBuilder.diasDoMes<br/>Local variable named diasDoMes<br/>At RecorrenciaDTO.java:[line 11]<br/>At RecorrenciaDTO.java:[line 11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.dto.nota.NotaDTO.setNotas(List) may expose internal representation by storing an externally mutable object into NotaDTO.notas<br/>
+                  <br/>
+                  <br/>In file NotaDTO.java NotaDTO.java,
+					
+						line 24 24<br/>In class com.esback.dto.nota.NotaDTO<br/>In method com.esback.dto.nota.NotaDTO.setNotas(List)<br/>Field com.esback.dto.nota.NotaDTO.notas<br/>Local variable named notas<br/>At NotaDTO.java:[line 24]<br/>At NotaDTO.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Curso.setDisciplinasList(List) may expose internal representation by storing an externally mutable object into Curso.disciplinasList<br/>
+                  <br/>
+                  <br/>In file Curso.java Curso.java,
+					
+						line 25 25<br/>In class com.esback.model.curso.Curso<br/>In method com.esback.model.curso.Curso.setDisciplinasList(List)<br/>Field com.esback.model.curso.Curso.disciplinasList<br/>Local variable named disciplinasList<br/>At Curso.java:[line 25]<br/>At Curso.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.model.curso.Disciplina(Integer, String, Integer, Integer, String, List) may expose internal representation by storing an externally mutable object into Disciplina.notas<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 94 94<br/>In class com.esback.model.curso.Disciplina<br/>In method new com.esback.model.curso.Disciplina(Integer, String, Integer, Integer, String, List)<br/>Field com.esback.model.curso.Disciplina.notas<br/>Local variable named notas<br/>At Disciplina.java:[line 94]<br/>At Disciplina.java:[line 94]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.model.curso.Disciplina(String, Integer, Integer, String, List) may expose internal representation by storing an externally mutable object into Disciplina.preRequisitos<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 51 51<br/>In class com.esback.model.curso.Disciplina<br/>In method new com.esback.model.curso.Disciplina(String, Integer, Integer, String, List)<br/>Field com.esback.model.curso.Disciplina.preRequisitos<br/>Local variable named preRequisitos<br/>At Disciplina.java:[line 51]<br/>At Disciplina.java:[line 51]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Disciplina.setNotas(List) may expose internal representation by storing an externally mutable object into Disciplina.notas<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 138 138<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.setNotas(List)<br/>Field com.esback.model.curso.Disciplina.notas<br/>Local variable named notas<br/>At Disciplina.java:[line 138]<br/>At Disciplina.java:[line 138]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Disciplina.setPesos(List) may expose internal representation by storing an externally mutable object into Disciplina.pesos<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 146 146<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.setPesos(List)<br/>Field com.esback.model.curso.Disciplina.pesos<br/>Local variable named pesos<br/>At Disciplina.java:[line 146]<br/>At Disciplina.java:[line 146]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Disciplina.setPreRequisitos(List) may expose internal representation by storing an externally mutable object into Disciplina.preRequisitos<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 130 130<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.setPreRequisitos(List)<br/>Field com.esback.model.curso.Disciplina.preRequisitos<br/>Local variable named preRequisitos<br/>At Disciplina.java:[line 130]<br/>At Disciplina.java:[line 130]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.esback.model.curso.Historico(float, List, Integer, Integer) may expose internal representation by storing an externally mutable object into Historico.cadeiras<br/>
+                  <br/>
+                  <br/>In file Historico.java Historico.java,
+					
+						line 25 25<br/>In class com.esback.model.curso.Historico<br/>In method new com.esback.model.curso.Historico(float, List, Integer, Integer)<br/>Field com.esback.model.curso.Historico.cadeiras<br/>Local variable named cadeiras<br/>At Historico.java:[line 25]<br/>At Historico.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Historico.setCadeiras(List) may expose internal representation by storing an externally mutable object into Historico.cadeiras<br/>
+                  <br/>
+                  <br/>In file Historico.java Historico.java,
+					
+						line 63 63<br/>In class com.esback.model.curso.Historico<br/>In method com.esback.model.curso.Historico.setCadeiras(List)<br/>Field com.esback.model.curso.Historico.cadeiras<br/>Local variable named cadeiras<br/>At Historico.java:[line 63]<br/>At Historico.java:[line 63]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Nota.setDisciplina(Disciplina) may expose internal representation by storing an externally mutable object into Nota.disciplina<br/>
+                  <br/>
+                  <br/>In file Nota.java Nota.java,
+					
+						line 46 46<br/>In class com.esback.model.curso.Nota<br/>In method com.esback.model.curso.Nota.setDisciplina(Disciplina)<br/>Field com.esback.model.curso.Nota.disciplina<br/>Local variable named disciplina<br/>At Nota.java:[line 46]<br/>At Nota.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.model.curso.Nota.setNotas(List) may expose internal representation by storing an externally mutable object into Nota.notas<br/>
+                  <br/>
+                  <br/>In file Nota.java Nota.java,
+					
+						line 50 50<br/>In class com.esback.model.curso.Nota<br/>In method com.esback.model.curso.Nota.setNotas(List)<br/>Field com.esback.model.curso.Nota.notas<br/>Local variable named notas<br/>At Nota.java:[line 50]<br/>At Nota.java:[line 50]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_PERFORMANCE">Performance Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.service.Evento.RruleService.setBYDAY(HashSet, String) concatenates strings using + in a loop<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 95<br/>In class com.esback.service.Evento.RruleService<br/>In method com.esback.service.Evento.RruleService.setBYDAY(HashSet, String)<br/>At RruleService.java:[line 95]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.service.Evento.RruleService.setBYDAYSemana(ArrayList, String) concatenates strings using + in a loop<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 108<br/>In class com.esback.service.Evento.RruleService<br/>In method com.esback.service.Evento.RruleService.setBYDAYSemana(ArrayList, String)<br/>At RruleService.java:[line 108]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.esback.service.Evento.RruleService.setBYMONTHDAY(HashSet, String) concatenates strings using + in a loop<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 122<br/>In class com.esback.service.Evento.RruleService<br/>In method com.esback.service.Evento.RruleService.setBYMONTHDAY(HashSet, String)<br/>At RruleService.java:[line 122]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.CalendarioService.CALENDARIO; should this field be static?<br/>
+                  <br/>
+                  <br/>In file CalendarioService.java,
+					
+						line 45<br/>In class com.esback.service.Evento.CalendarioService<br/>Field com.esback.service.Evento.CalendarioService.CALENDARIO<br/>At CalendarioService.java:[line 45]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.RruleService.BYDAY; should this field be static?<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 14<br/>In class com.esback.service.Evento.RruleService<br/>Field com.esback.service.Evento.RruleService.BYDAY<br/>At RruleService.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.RruleService.BYMONTH; should this field be static?<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 15<br/>In class com.esback.service.Evento.RruleService<br/>Field com.esback.service.Evento.RruleService.BYMONTH<br/>At RruleService.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.RruleService.BYMONTHDAY; should this field be static?<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 16<br/>In class com.esback.service.Evento.RruleService<br/>Field com.esback.service.Evento.RruleService.BYMONTHDAY<br/>At RruleService.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.RruleService.COUNT; should this field be static?<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 13<br/>In class com.esback.service.Evento.RruleService<br/>Field com.esback.service.Evento.RruleService.COUNT<br/>At RruleService.java:[line 13]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.RruleService.FREQ; should this field be static?<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 11<br/>In class com.esback.service.Evento.RruleService<br/>Field com.esback.service.Evento.RruleService.FREQ<br/>At RruleService.java:[line 11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.service.Evento.RruleService.INTERVAL; should this field be static?<br/>
+                  <br/>
+                  <br/>In file RruleService.java,
+					
+						line 12<br/>In class com.esback.service.Evento.RruleService<br/>Field com.esback.service.Evento.RruleService.INTERVAL<br/>At RruleService.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#URF_UNREAD_FIELD">Unread field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unread field: com.esback.model.curso.Nota.disciplina<br/>
+                  <br/>
+                  <br/>In file Nota.java,
+					
+						line 46<br/>In class com.esback.model.curso.Nota<br/>Field com.esback.model.curso.Nota.disciplina<br/>At Nota.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UUF_UNUSED_FIELD">Unused field</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Unused field: com.esback.dto.disciplina.DisciplinaNotasDTO.codigoDisciplina<br/>
+                  <br/>
+                  <br/>In file DisciplinaNotasDTO.java,
+					
+						lines 
+						    to <br/>In class com.esback.dto.disciplina.DisciplinaNotasDTO<br/>Field com.esback.dto.disciplina.DisciplinaNotasDTO.codigoDisciplina<br/>In DisciplinaNotasDTO.java</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_STYLE">Dodgy code Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to accessToken in com.esback.service.UserService.updateAccessToken(String, OAuth2AuthenticationToken)<br/>
+                  <br/>
+                  <br/>In file UserService.java UserService.java,
+					
+						line 32 32<br/>In class com.esback.service.UserService<br/>In method com.esback.service.UserService.updateAccessToken(String, OAuth2AuthenticationToken)<br/>Local variable named accessToken<br/>At UserService.java:[line 32]<br/>At UserService.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Dead store to id in com.esback.service.disciplina.CadastrarDisciplinasCursandoService.cadastrarDisciplinasCursando(DisciplinaDTO)<br/>
+                  <br/>
+                  <br/>In file CadastrarDisciplinasCursandoService.java CadastrarDisciplinasCursandoService.java,
+					
+						line 35 35<br/>In class com.esback.service.disciplina.CadastrarDisciplinasCursandoService<br/>In method com.esback.service.disciplina.CadastrarDisciplinasCursandoService.cadastrarDisciplinasCursando(DisciplinaDTO)<br/>Local variable named id<br/>At CadastrarDisciplinasCursandoService.java:[line 35]<br/>At CadastrarDisciplinasCursandoService.java:[line 35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Integral division result cast to double or float in com.esback.model.curso.Disciplina.addPeso(List)<br/>
+                  <br/>
+                  <br/>In file Disciplina.java Disciplina.java,
+					
+						line 106 106<br/>In class com.esback.model.curso.Disciplina<br/>In method com.esback.model.curso.Disciplina.addPeso(List)<br/>At Disciplina.java:[line 106]<br/>At Disciplina.java:[line 106]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SA_LOCAL_DOUBLE_ASSIGNMENT">Double assignment of local variable</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Double assignment of horas in com.esback.functions.Calculadora.calculaProgressoHorasObrigatorias(List)<br/>
+                  <br/>
+                  <br/>In file Calculadora.java,
+					
+						line 103<br/>In class com.esback.functions.Calculadora<br/>In method com.esback.functions.Calculadora.calculaProgressoHorasObrigatorias(List)<br/>Local variable named horas<br/>At Calculadora.java:[line 103]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.esback.service.Evento.RruleService.gerarRrule(RecorrenciaDTO) where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file RruleService.java RruleService.java,
+					
+						lines 57 57
+						    to 60 60<br/>In class com.esback.service.Evento.RruleService<br/>In method com.esback.service.Evento.RruleService.gerarRrule(RecorrenciaDTO)<br/>At RruleService.java:[lines 57-60]<br/>At RruleService.java:[lines 57-60]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.esback.service.Evento.RruleService.gerarRrule(RecorrenciaDTO) where default case is missing<br/>
+                  <br/>
+                  <br/>In file RruleService.java RruleService.java,
+					
+						lines 50 50
+						    to 69 69<br/>In class com.esback.service.Evento.RruleService<br/>In method com.esback.service.Evento.RruleService.gerarRrule(RecorrenciaDTO)<br/>At RruleService.java:[lines 50-69]<br/>At RruleService.java:[lines 50-69]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+      </h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables. Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+      </h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+      </h2>
+
+<p>
+This code casts the result of an integral division (e.g., int or long division)
+operation to double or float.
+Doing division on integers truncates the result
+to the integer value closest to zero. The fact that the result
+was cast to double suggests that this precision should have been retained.
+What was probably meant was to cast one or both of the operands to
+double <em>before</em> performing the division.  Here is an example:
+</p>
+<pre><code>int x = 2;
+int y = 5;
+// Wrong: yields result 0.0
+double value1 = x / y;
+
+// Right: yields result 0.4
+double value2 = x / (double) y;
+</code></pre>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_UNWRITTEN_FIELD">Read of unwritten field</a>
+      </h2>
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NM_CLASS_NAMING_CONVENTION">Class names should start with an upper case letter</a>
+      </h2>
+
+  <p> Class names should be nouns, in mixed case with the first letter of each internal word capitalized. Try to keep your class names simple and descriptive. Use whole words-avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+      </h2>
+
+  <p>
+Methods should be verbs, in mixed case with the first letter lowercase, with the first letter of each internal word capitalized.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SA_LOCAL_DOUBLE_ASSIGNMENT">Double assignment of local variable</a>
+      </h2>
+
+<p> This method contains a double assignment of a local variable; e.g.
+</p>
+<pre><code>public void foo() {
+    int x,y;
+    x = x = 17;
+}
+</code></pre>
+<p>Assigning the same value to a variable twice is useless, and may indicate a logic error or typo.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SA_FIELD_SELF_ASSIGNMENT">Self assignment of field</a>
+      </h2>
+
+<p> This method contains a self assignment of a field; e.g.
+</p>
+<pre><code>int x;
+public void foo() {
+    x = x;
+}
+</code></pre>
+<p>Such assignments are useless, and may indicate a logic error or typo.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+      </h2>
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 5) explicitly.</p>
+
+<p> For example:</p>
+<pre><code>// This is bad
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+}
+
+// This is better
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+      </h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+      </h2>
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+      </h2>
+
+  <p> This class contains an instance final field that
+   is initialized to a compile-time static value.
+   Consider making the field static.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UR_UNINIT_READ">Uninitialized read of field in constructor</a>
+      </h2>
+
+  <p> This constructor reads a field which has not yet been assigned a value.&nbsp;
+  This is often caused when the programmer mistakenly uses the field instead
+  of one of the constructor's parameters.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="URF_UNREAD_FIELD">Unread field</a>
+      </h2>
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UUF_UNUSED_FIELD">Unused field</a>
+      </h2>
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UWF_UNWRITTEN_FIELD">Unwritten field</a>
+      </h2>
+
+  <p> This field is never written.&nbsp; All reads of it will return the default
+value. Check for errors (should it have been initialized?), or remove it if it is useless.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>
